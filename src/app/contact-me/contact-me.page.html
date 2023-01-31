@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-text style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase;">
+        <ion-icon name="create" style="transform: rotate(-15deg);"></ion-icon>
+        <ion-icon name="color-wand" style="transform: rotate(15deg);"></ion-icon>
+        Creatividad a tu alcance
+      </ion-text>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Formulario de contacto</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form>
+        <ion-item lines="none">
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="floating">Asunto</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="floating">Mensaje</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+        <ion-button expand="block" type="submit">Enviar</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

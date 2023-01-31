@@ -1,3 +1,32 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  
+  <ion-menu contentId="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/home">
+          <ion-icon name="person"></ion-icon>
+          Acerca de
+        </ion-item>
+        <ion-item routerLink="/experience">
+          <ion-icon name="briefcase"></ion-icon>
+          Experiencia
+        </ion-item>
+        <ion-item routerLink="/portfolio">
+          <ion-icon name="clipboard"></ion-icon>
+          Proyectos
+        </ion-item>
+        <ion-item routerLink="/contact-me">
+          <ion-icon name="mail"></ion-icon>
+          Contacto
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content"></ion-router-outlet>
+
 </ion-app>

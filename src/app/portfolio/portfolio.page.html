@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-text style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase;">
+        <ion-icon name="create" style="transform: rotate(-15deg);"></ion-icon>
+        <ion-icon name="color-wand" style="transform: rotate(15deg);"></ion-icon>
+        Creatividad a tu alcance
+      </ion-text>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+ <!-- <ion-searchbar class="formal-background" [(ngModel)]="searchValue" (ionChange)="search()"></ion-searchbar>-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Proyectos</ion-card-subtitle>
+      <ion-card-title>Mis Proyectos Personales y Profesionales</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="laptop" slot="start"></ion-icon>
+          <ion-text>
+            <ul>
+              <ion-label><b>Nombre:</b> Aplicación Móvil para predecir precios de casas</ion-label>
+              <ion-label><b>Descripción:</b> Aplicación móvil desarrollada con Flutter y FastApi que permite predecir precios de casas según varios datos.</ion-label>
+              <ion-label><b>Enlaces:</b> <a href="https://github.com/Ricardo6904/ProyectoMLPreciosCasas">Código en Github</a> | <a href="">Demo en línea</a></ion-label>
+            </ul>
+          </ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="laptop" slot="start"></ion-icon>
+          <ion-text>
+            <ul>
+              <ion-label><b>Nombre:</b> Tienda en Línea (E-COMMERCE)</ion-label>
+              <ion-label><b>Descripción:</b> Tienda desarrollada con Angular y C# que ofrece productos bajo pedido con pasarela de pagos.</ion-label>
+              <ion-label><b>Colaboradores:</b> Alejandro Carrera, Marlon Maisanche, Ricardo Supe</ion-label>
+              <ion-label><b>Enlaces:</b> <a href="https://github.com/MarlonMaisanche/DesarrolloAsistido">Código en Github</a> | <a href="">Demo en línea</a></ion-label>
+            </ul>
+          </ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="laptop" slot="start"></ion-icon>
+          <ion-text>
+            <ul>
+              <ion-label><b>Nombre:</b> GisMovil</ion-label>
+              <ion-label><b>Descripción:</b> Prototipo móvil para el registro de red eléctrica usando Ionic, Capacitor, NPM y Leaflet, desarrollado durante pasantía.</ion-label>
+              <ion-label><b>Nota:</b> Código fuente limitado</ion-label>
+              <ion-label><b>Enlaces:</b> <a href="https://github.com/Ricardo6904/Geolocation">Código en Github</a> | <a href="">Demo en línea</a></ion-label>
+            </ul>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

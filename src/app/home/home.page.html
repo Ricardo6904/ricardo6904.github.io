@@ -1,20 +1,118 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      <ion-text style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase;">
+        <ion-icon name="create" style="transform: rotate(-15deg);"></ion-icon>
+        <ion-icon name="color-wand" style="transform: rotate(15deg);"></ion-icon>
+        Creatividad a tu alcance
+      </ion-text>
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-router-outlet id="content"></ion-router-outlet>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Acerca de mí</ion-card-subtitle>
+      <ion-card-title>Hola, soy Ricardo Supe</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p style="text-align: justify;">Soy un apasionado por la tecnología y el aprendizaje constante. Como nómada
+        digital, disfruto de la libertad de
+        trabajar desde cualquier lugar del mundo mientras sigo desarrollando mis habilidades y conociendo nuevas
+        culturas. Me esfuerzo por estar siempre al día con las últimas tendencias y tecnologías en el mundo digital, y
+        estoy comprometido a mejorar mis habilidades y conocimientos de manera continua. Mi objetivo es utilizar mis
+        habilidades para ayudar a las empresas y organizaciones a alcanzar sus metas a través del diseño y el desarrollo
+        de soluciones digitales eficientes y atractivas.</p>
+      <ion-button (click)="downloadResume()" color="secondary">
+        <ion-icon name="download" slot="start" color="dark"></ion-icon>
+        Descarga mi Hoja de Vida
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Habilidades</ion-card-subtitle>
+      <ion-card-title>Tecnologías y Conocimiento</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="logo-html5" slot="start"></ion-icon>
+          HTML5
+        </ion-item>
+        <ion-item>
+          <ion-icon name="logo-css3" slot="start"></ion-icon>
+          CSS3
+        </ion-item>
+        <ion-item>
+          <ion-icon name="logo-javascript" slot="start"></ion-icon>
+          JavaScript
+        </ion-item>
+        <ion-item>
+          <ion-icon name="logo-angular" slot="start"></ion-icon>
+          Angular
+        </ion-item>
+        <ion-item>
+          <ion-icon name="logo-ionic" slot="start"></ion-icon>
+          Ionic
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Educación</ion-card-subtitle>
+      <ion-card-title>Detalles sobre la formación académica</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="school" slot="start"></ion-icon>
+          <ion-text>
+            <ul>
+              <ion-label><b>Universidad:</b> Universidad Tércnica de Ambato </ion-label>
+              <ion-label><b>Carrera:</b> Software</ion-label>
+              <ion-label><b>Estado:</b> Próximo a egresar</ion-label>
+            </ul>
+          </ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="book" slot="start"></ion-icon>
+          <ion-text>
+            <ul>
+              <ion-label><b>Certificación:</b> Creando aplicaciones para implementar modelos de machine learning</ion-label>
+              <ion-label><b>Institución:</b> SEE (Sociedad Ecuatoriana de Estadística)</ion-label>
+              <ion-label><b>Año:</b> 2022</ion-label>
+            </ul>
+          </ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="book" slot="start"></ion-icon>
+          <ion-text>
+            <ul>
+              <ion-label><b>Curso:</b> Crea Aplicaciones Java Web Completísimo y Desde Cero!</ion-label>
+              <ion-label><b>Institución:</b> Udemy</ion-label>
+              <ion-label><b>Año:</b> 2023</ion-label>
+            </ul>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
